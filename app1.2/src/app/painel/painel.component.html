@@ -1,0 +1,38 @@
+<!-- Dentro deste componente localizam-se os componentes "progresso" e  -->
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <!-- Dividindo o grid em duas colunas para colocar o progresso e as tentativas-->
+      <div class="col-sm-6">
+          <app-progresso></app-progresso>  
+      </div>
+      <div class="col-sm-6">
+          <div class="d-flex justify-content-end">
+              <app-tentativas></app-tentativas>
+          </div>  
+      </div>
+    </div>
+    
+    <!-- linha do grid para a frase a ser traduzida-->
+    <div class="row">
+      <!-- uma única coluna -->
+      <div class="col">
+        <h6>Traduza a frase:</h6>
+        <p>How are you?</p>
+
+        <div class="form-group">
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+      </div>  
+    </div>
+
+    <!-- Linha para adição do botão -->
+    <div class="row">
+      <div class="col">
+          <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-primary">Verificar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
